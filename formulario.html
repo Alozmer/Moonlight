@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles/formstyle.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <h1>Moonlight</h1>
+            </a>
+        </div>
+        
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./origen.html">Origen</a></li>
+            <li><a href="./efectos.html">Efectos</a></li>
+            <li><a href="./secretos.html">Secretos</a></li>
+            <li><a href="./formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+    <h1 class="tellus">Cuéntanos sobre ti</h1>
+    <div class="container">
+        <div class="form-wrapper">
+          <h2>Datos personales</h2>
+          <form>
+            <!-- Campos del formulario 1 -->
+            <p>
+                <label>Nombre:</label>
+                <input type="text" name="nombres" id="nombres" size="26px" placeholder="Ingrese su nombre">
+
+                <label>Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" size="26px" placeholder="Ingrese sus apellidos">
+            </p>
+            <p>
+                <label>Correo:</label>
+                <input type="email" name="correo" id="correo" size="20px" placeholder="Ingrese su correo">
+            </p>
+            <label>Horóscopo:</label>
+            <select name="horóscopo" id="horóscopo">
+                <option value="Selecciona">Selecciona</option>
+                <option value="Géminis">Géminis</option>
+                <option value="Piscis">Piscis</option>
+                <option value="Cáncer">Cáncer</option>
+                <option value="Libra">Libra</option>
+                <option value="Sagitario">Sagitario</option>
+                <option value="Capricornio">Capricornio</option>
+                <option value="Acuario">Acuario</option>
+                <option value="Aries">Aries</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Tauro">Tauro</option>
+                <option value="Escorpio">Escorpio</option>
+                <option value="Leo">Leo</option>
+            </select>
+            <p>
+                <label>Fecha de nacimiento:</label>
+                <input type="date" name="FechaN">
+            </p> 
+          </form>
+        </div>
+        
+        <div class="form-wrapper">
+          <h2>Aficiones</h2>
+          <form>
+            <!-- Campos del formulario 2 -->
+                <label>Tus favoritas de astronomía:</label>
+                <input type="radio" name="Astrofísica" value="ASF">Astrofísica
+                <input type="radio" name="Planeotología" value="PLA">Planeotología
+                <input type="radio" name="Astrometría" value="ASM">Astrometría
+                <input type="radio" name="Astronáutica" value="ASN">Astronáutica
+    
+            <p>
+                <label>¿Qué es lo que más te interesa de la astronomía?</label>
+                <input type="text" name="interes" size="43px" placeholder="Su respuesta">
+            </p>
+            <p>
+                <label>¿Qué tipo de música escuchas?</label>
+                <input type="text" name="musica" size="43px" placeholder="Su respuesta">
+            </p>
+            <p>
+                <label>¿A qué dedicas tu tiempo libre?</label>
+                <input type="text" name="tiempo" size="43px" placeholder="Su respuesta">
+            </p>
+            <p>
+                <label>¿Cuál es tu hobbie favorito?</label>
+                <input type="text" name="hobbie" size="43px" placeholder="Su respuesta">
+            </p>
+          </form>
+        </div>
+        
+        <div class="form-wrapper">
+          <h2>Gustos personales</h2>
+          <form>
+            <!-- Campos del formulario 3 -->
+                <label>¿Cuál es tu película de astronomía favorita?</label>
+                <select name="película" id="película">
+                    <option value="Selecciona">Selecciona</option>
+                    <option value="Gravity">Gravity</option>
+                    <option value="Apolo 13">Apolo 13</option>
+                    <option value="Don't look up">Don't look up</option>
+                    <option value="Interestellar">Interestellar</option>
+                    <option value="Arrival">Arrival</option>
+                    <option value="The Martian">The Martian</option>
+                    <option value="Contact">Contact</option>
+                    <option value="Ad Astra">Ad Astra</option>
+                </select><br>
+                <label>¿Qué planeta de nuestro sistema solar te gustaría ser?</label>
+                <select name="planeta" id="planeta">
+                    <option value="Selecciona">Selecciona</option>
+                    <option value="Marte">Marte</option>
+                    <option value="Urano">Urano</option>
+                    <option value="La Tierra">La Tierra</option>
+                    <option value="Saturno">Saturno</option>
+                    <option value="Júpiter">Júpiter</option>
+                    <option value="Mercurio">Mercurio</option>
+                    <option value="Neptuno">Neptuno</option>
+                    <option value="Venus">Venus</option>
+                </select><br>
+                <label>¿Quién es tu astrónomo favorito?</label>
+                <select name="astrónomo" id="astrónomo">
+                    <option value="Selecciona">Selecciona</option>
+                    <option value="Galileo Galilei">Galileo Galilei</option>
+                    <option value="Copérnico">Copérnico</option>
+                    <option value="Vera Rubin">Vera Rubin</option>
+                    <option value="Edwin Hubble">Edwin Hubble</option>
+                    <option value="Ptolomeo">Ptolomeo</option>
+                    <option value="J. Kepler">J. Kepler</option>
+                    <option value="Tales de Mileto">Tales de Mileto</option>
+                    <option value="Hipatia">Hipatia</option>
+                    <option value="Isaac Newton">Isaac Newton</option>
+                    <option value="Carolina Herschel">Carolina Herschel</option>
+                </select><br>
+                </select>
+                    <label>¿Te gusta tu trabajo?</label>
+                    <input type="radio" name="Si" value="Si">Si
+                    <input type="radio" name="No" value="No">No
+          </form>
+        </div>
+        
+        <div class="form-wrapper">
+          <h2>Sugerencias</h2>
+          <form>
+            <!-- Campos del formulario 4 -->
+                <p>
+                    <label>¿Qué te gustaría ver en esta página web?</label>
+                    <input type="text" name="ver" id="ver" size="26px" placeholder="Su respuesta">
+                </p>
+                <p>
+                    <label>¿Qué temas de la astronomía quieres ver en esta página web?</label>
+                    <input type="text" name="ver2" id="ver2" size="26px" placeholder="Su respuesta">
+                </p>
+          </form>
+        </div>
+      </div>
+</body>
+</html>

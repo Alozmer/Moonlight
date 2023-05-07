@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+/* Barra navegación */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #222;
+    background-image: url(../images/BK.png);
+}
+
+a{
+    text-decoration: none;
+    font-family: Audiowide;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1c1026;
+    height: 60px;
+}
+
+.logo{
+    width: 250px;
+}
+
+.logo a{
+    font-family: Audiowide;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 29px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul{
+    padding: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 20px;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: magenta;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* Formulario */
+.tellus{
+    font-family: Audiowide;
+    margin: auto;
+    height: 50px;
+    width: 500px;
+    padding: 5px;
+    padding-top: 20px;
+    padding-left: 100px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: Audiowide;
+    color: #fff;
+    word-spacing: 5px;
+    line-height: 2;
+    
+  }
+  
+  .form-wrapper {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .form-wrapper h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    color: magenta;
+  }
+  
+  .form-wrapper:nth-child(1) {
+    order: 1;
+    border: 2px solid white;
+    padding: 10px;
+  }
+  
+  .form-wrapper:nth-child(2) {
+    order: 2;
+    border: 2px solid white;
+    padding: 10px;
+  }
+  
+  .form-wrapper:nth-child(3) {
+    order: 3;
+    border: 2px solid white;
+    padding: 10px;
+  }
+  
+  .form-wrapper:nth-child(4) {
+    order: 4;
+    border: 2px solid white;
+    padding: 10px;
+  }

@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #222;
+    background-image: url(../images/BK.png);
+}
+
+/* body::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semitransparente 
+} */
+
+a{
+    text-decoration: none;
+    font-family: Audiowide;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1c1026;
+    height: 60px;
+}
+
+.logo{
+    width: 250px;
+}
+
+.logo a{
+    font-family: Audiowide;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 29px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul{
+    padding: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 20px;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: magenta;
+    transition: all 0.5s ease-in-out;
+}
+
+.titulo {
+    font-family: Audiowide;
+    font-size: 30px;
+    padding: 2%;
+    color: magenta;
+}
+.fondo {
+    font-family: Poppins;
+    color: #fff;
+    padding: 30px 5%;
+    margin-top: 0.1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.negrita {
+  font-size: 20px;
+}
+/* Animación del texto */
+.fondo {
+  opacity: 0;
+  animation: aparecer 3s forwards;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* Scroll down */
+.mouse {
+    height:50px;
+    width:35px;
+    border-radius:14px;
+    border:2px solid #fff;
+    align-items: center;
+    margin-left: 700px;
+    margin-top: -70px;
+}
+.mouse:after {
+    content:'';
+    display:block;
+    height:8px;
+    width:2px;
+    margin:10px auto;
+    background:#fff;
+    position:relative;
+    -webkit-animation:a 1.2s ease infinite;
+    animation:a 1.2s ease infinite;
+}
+.arrow-scroll {
+    width:35px;
+    margin-top:10px;
+    margin-left: 702px;
+    margin-top: 5px;
+}
+.arrow-scroll>span {
+    font-family:Arial,sans-serif;
+    display:block;
+    width:9px;
+    height:9px;
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
+    margin:5px auto 3px;
+    -webkit-animation:b 1s infinite;
+    animation:b 1s infinite;
+    -webkit-animation-delay:.2s;
+    animation-delay:.2s
+}
+.arrow-scroll>span:first-child {
+    -webkit-animation-delay:.1s;
+    animation-delay:.1s;
+}
+.arrow-scroll>span:last-child {
+    -webkit-animation-delay:.3s;
+    animation-delay:.3s;
+}
+@-webkit-keyframes a {
+    0% {
+        opacity:1;
+        -webkit-transform:translateY(0);
+        transform:translateY(0);
+        } to {
+            opacity:0;
+            -webkit-transform:translateY(8px);
+            transform:translateY(8px);
+            }
+}
+@keyframes a {
+    0%{
+        opacity:1;
+        -webkit-transform:translateY(0);
+        transform:translateY(0);
+    } to {
+        opacity:0;
+        -webkit-transform:translateY(8px);
+        transform:translateY(8px);
+    }
+}
+@-webkit-keyframes b {
+    0% {
+        opacity:0;
+    } 50% {
+        opacity:.5;
+    } to {
+        opacity:1;
+    }
+}
+@keyframes b {
+    0% {
+        opacity:0;
+    } 50% {
+        opacity:.5;
+    } to {
+        opacity:1;
+    }
+}
+
+/* Animación del sistema solar */
+html,
+body {
+  /* width: 100%;
+  height: 100%; */
+  background-color: #121215;
+}
+
+.solar-system {
+  position: relative;
+  width: 780px;
+  height: 780px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.orbit {
+  border: 1px dashed #666;
+}
+
+#sun,
+.orbit,
+.orbit + div,
+.orbit + div > div {
+  position: absolute;
+}
+
+#sun,
+.orbit,
+.orbit + div {
+  top: 50%;
+  left: 50%;
+}
+.orbit + div > div {
+  top: 0;
+  left: 50%;
+}
+
+.orbit,
+.orbit + div div,
+#earth {
+  border-radius: 50%;
+}
+
+#sun {
+  height: 200px;
+  width: 200px;
+  background-color: #fae20a;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 50%;
+  box-shadow: 0 0 84px orange;
+}
+
+#earth {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: -25px;
+  margin-top: -25px;
+  border-radius: 50%;
+  box-shadow: 0 0 34px #3a4385;
+}
+
+.earth-orbit,
+.earth-spin {
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+}
+
+#moon {
+  margin-top: -6px;
+  margin-left: -6px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 14px #3a4385;
+}
+.moon-orbit,
+.moon-spin {
+  height: 90px;
+  width: 90px;
+  margin-top: -45px;
+  margin-left: -45px;
+  border-color: #447;
+}
+
+#venus {
+  margin-top: -20px;
+  margin-left: -20px;
+  height: 40px;
+  width: 40px;
+  background-color: #3498db;
+  box-shadow: 0 0 34px #3a4385;
+}
+.venus-orbit,
+.venus-spin {
+  margin-top: -185px;
+  margin-left: -185px;
+  width: 370px;
+  height: 370px;
+}
+
+#mercury {
+  margin-top: -13.5px;
+  margin-left: -13.5px;
+  height: 25px;
+  width: 25px;
+  background-color: #a65e22;
+  /* box-shadow: 0 0 34px #3a4385; */
+}
+
+.mercury-orbit,
+.mercury-spin {
+  width: 280px;
+  height: 280px;
+  margin-left: -140px;
+  margin-top: -140px;
+}
+
+#mars {
+  margin-top: -16px;
+  margin-left: -16px;
+  height: 32px;
+  width: 32px;
+  background-color: #863222;
+  box-shadow: 0 0 14px #a64232;
+}
+
+.mars-orbit,
+.mars-spin {
+  width: 700px;
+  height: 700px;
+  margin-left: -350px;
+  margin-top: -350px;
+}
+
+/* Animaciones de giro/rotación de los planetas y la Luna */
+
+@keyframes spin-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.earth-spin {
+  animation: spin-right 36.5s linear infinite;
+}
+.moon-spin {
+  animation: spin-right 3s linear infinite;
+}
+.venus-spin {
+  animation: spin-right 22s linear infinite;
+}
+.mercury-spin {
+  animation: spin-right 8.8s linear infinite;
+}
+.mars-spin {
+  animation: spin-right 68.7s linear infinite;
+}
+
+
+/* Animación imagen derecha */
+.imagen-derecha{
+  display: flex;
+  width: auto;
+  float: right;
+  flex-wrap: wrap;
+  margin-right: 2%;
+  padding-left: 60px;
+  overflow: hidden;
+}
+
+.imagen-derecha img {
+  display: block;
+  width: 90%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagen-derecha:hover img {
+  transform: scale(1.2);
+}
